@@ -15,7 +15,7 @@ INSTALLATION
 First, clone the project to a directory on your system:
 
 ~~~
-git@github.com:doublehops/yii2-advanced-dev-environment.git yii2-dev
+git clone git@github.com:doublehops/yii2-advanced-dev-environment.git yii2-dev
 ~~~
 
 If you want to use the supplied virtual machine option you will need to install Vagrant and Ansible and follow these steps:
@@ -26,7 +26,8 @@ If you want to use the supplied virtual machine option you will need to install 
 4. Run **composer global require "fxp/composer-asset-plugin:1.0.0"**
 5. Run **composer create-project --prefer-dist yiisoft/yii2-app-advanced yii-application**
 6. Run **php yii-application/init** and select Development.
-7. Update file common/config/main-local.php with database parameters: database-name=yii2, user=dev and password=secret.
+7. Update file common/config/main-local.php with database parameters: **database-name=yii2, user=dev and password=secret**.
 8. Run migration script to install user table: **yii-application/yii migrate**
-9. Add domains to your hosts file: **echo "192.168.33.13 frontend backend" | sudo tee --append /etc/hosts > /dev/null**
-10. Point you browser to both http://frontend/ and http://backend/ to test that it's working.
+9. Exit back out to your host machine.
+10. Add domains to your hosts file: **echo "192.168.33.13 frontend backend" | sudo tee --append /etc/hosts > /dev/null**
+11. Point you browser to both **http://frontend/** and **http://backend/** to test that it's working.
