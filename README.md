@@ -4,7 +4,7 @@ Yii2 advanced project environment
 This project is a simple way to get a virtual machine up and running for a Yii2 environment. Running Vagrant and Ansible this is a pretty easy and straight forward way to get Yii2 installed and ready to play with.
 
 SOFTWARE
-========
+--------
 
 The virtual machine runs Debian 7 with Nginx, MariaDB and PHP5.5.
 
