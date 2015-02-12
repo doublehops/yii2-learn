@@ -1,0 +1,5 @@
+---
+mariadb_root_password: root12
+mariadb_dev_username: dev
+mariadb_dev_password: secret
+mariadb_database_name: yii2
