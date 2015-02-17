@@ -14,7 +14,7 @@ INSTALLATION
 
 First, clone the project to a directory on your system:
 
-1. Clone repo: **git clone git@github.com:doublehops/yii2-advanced-dev-environment.git .**
+1. Clone repo: **git clone git@github.com:doublehops/yii2-advanced-dev-environment.git .** (include trailing .)
 2. Create project's web path: **mkdir app**
 3. Type **vagrant up** to install and startup the virtual machine. This will take some time.
 4. Type **vagrant ssh** to ssh into the vm and change to path /var/www. **cd /var/www**
