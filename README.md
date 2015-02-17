@@ -15,7 +15,7 @@ INSTALLATION
 First, clone the project to a directory on your system:
 
 1. Clone repo: **git clone git@github.com:doublehops/yii2-advanced-dev-environment.git app**
-2. Change into the project's directory: **cd app**
+2. Create project's web path: **mkdir app**
 3. Type **vagrant up** to install and startup the virtual machine. This will take some time.
 4. Type **vagrant ssh** to ssh into the vm and change to path /var/www. **cd /var/www**
 5. Run **composer global require "fxp/composer-asset-plugin:1.0.0"**
