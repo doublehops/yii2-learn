@@ -18,8 +18,6 @@ First, clone the project to a directory on your system:
 git clone git@github.com:doublehops/yii2-advanced-dev-environment.git app
 ~~~
 
-If you want to use the supplied virtual machine option you will need to install Vagrant and Ansible and follow these steps:
-
 1. Change into the project's directory: **cd app**
 2. Type **vagrant up** to install and startup the virtual machine. This will take some time.
 3. Type **vagrant ssh** to ssh into the vm and change to path /var/www. **cd /var/www**
