@@ -1,5 +1,5 @@
-Yii2 advanced project environment
-================================
+Yii2 progress learning
+======================
 
 This repo is just a record of me learning the ins and outs of Yii2. Originally built from the Yii2 VM repo.
 
