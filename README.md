@@ -1,7 +1,7 @@
 Yii2 advanced project environment
 ================================
 
-This repository is made available for people to easily setup dev environments to start playing around with Yii2. By running a Vagrant VM and provisioned with Ansible, it is pretty trivial to get a professional dev environment setup.
+This repo is just a record of me learning the ins and outs of Yii2. Originally built from the Yii2 VM repo.
 
 SOFTWARE
 --------
