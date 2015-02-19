@@ -10,8 +10,16 @@ return [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
-                // ...
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'address'],
             ],
         ],
+        'request' => [
+            'class' => '\yii\web\Request',
+            'enableCookieValidation' => false,
+            'parsers' => [
+                'application/json' => 'yii\web\JsonParser',
+            ],
+        ],  
     ],
 ];
