@@ -29,6 +29,20 @@ class Address extends \yii\db\ActiveRecord
     }
 
     /**
+     * Limit fields returned in API call
+     */
+    public function fields()
+    {
+        return [
+            'id',
+            'user_id',
+            'street_address',
+            'city',
+            'country',
+        ];
+    }
+
+    /**
      * @inheritdoc
      */
     public function rules()
