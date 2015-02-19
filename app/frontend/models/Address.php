@@ -20,6 +20,8 @@ use Yii;
  */
 class Address extends \yii\db\ActiveRecord
 {
+    public $profile = 'Default Profile';
+
     /**
      * @inheritdoc
      */
@@ -39,6 +41,7 @@ class Address extends \yii\db\ActiveRecord
             'street_address',
             'city',
             'country',
+            'profile',
         ];
     }
 
