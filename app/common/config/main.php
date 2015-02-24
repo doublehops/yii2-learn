@@ -10,6 +10,9 @@ return [
             'showScriptName' => false,
             'enableStrictParsing' => false,
             'rules' => [
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'user','pluralize' => false],
+                ['class' => 'yii\rest\UrlRule', 'controller' => 'address','pluralize' => false],
+                
             ],
         ],
         'request' => [
