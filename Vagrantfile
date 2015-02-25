@@ -22,6 +22,7 @@ Vagrant.configure("2") do |config|
   # using a specific IP.
   config.vm.hostname = 'rocketorange';
   config.vm.network :private_network, ip: "192.168.33.13"
+  config.vm.network :forwarded_port, guest: 22, host: 2213, host_ip: "0.0.0.0", id: "ssh", auto_correct: true
 
   # Create a public network, which generally matched to bridged network.
   # Bridged networks make the machine appear as another physical device on
