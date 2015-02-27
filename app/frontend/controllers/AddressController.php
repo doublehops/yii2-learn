@@ -9,6 +9,7 @@ use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use yii\rest\ActiveController;
+use yii\helpers\ArrayHelper;
 
 /**
  * AddressController implements the CRUD actions for Address model.
@@ -17,16 +18,18 @@ class AddressController extends ActiveController
 {
     public $modelClass = 'app\models\Address';
 
-    public function DISABLEbehaviors()
+    public function behaviors()
     {
-        return [
+        return ArrayHelper::merge(parent::behaviors(), [
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['post'],
+                    'index' => ['GET','HEAD'],
+                    'view' => ['GET','HEAD'],
                 ],
             ],
-        ];
+        ]);
     }
 
     /**
