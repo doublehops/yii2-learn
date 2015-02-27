@@ -4,7 +4,8 @@ namespace app\models;
 
 use Yii;
 use yii\db\ActiveRecord;
-use yii\behaviors\TimestampBehavior;
+use common\behaviors\BaseModelBehavior;
+
 
 /**
  * This is the model class for table "address".
@@ -15,8 +16,8 @@ use yii\behaviors\TimestampBehavior;
  * @property string $city
  * @property string $country
  * @property integer $status
- * @property integer $created_at
- * @property integer $updated_at
+ * @property string $created_at
+ * @property string $updated_at
  *
  * @property User $user
  */
@@ -35,7 +36,7 @@ class Address extends \yii\db\ActiveRecord
     public function behaviors()
     {
         return [
-            'class' => TimestampBehavior::className(),
+            BaseModelBehavior::className(),
         ];
     }
 
@@ -61,7 +62,7 @@ class Address extends \yii\db\ActiveRecord
     {
         return [
             [['user_id'], 'required'],
-            [['user_id', 'status', 'created_at', 'updated_at'], 'integer'],
+            [['user_id', 'status'], 'integer'],
             [['street_address', 'city', 'country'], 'string', 'max' => 100]
         ];
     }
