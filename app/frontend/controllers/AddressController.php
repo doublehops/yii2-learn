@@ -32,12 +32,30 @@ class AddressController extends ActiveController
         ]);
     }
 
+    public function actions()
+    {
+        return array_merge(parent::actions(), [
+            'view' => [
+                'class' => 'yii\rest\ViewAction',
+                'modelClass' => $this->modelClass,
+                'checkAccess' => [$this, 'checkAccess'],
+                'findModel' => [$this, 'viewNow'],
+            ],
+        ]);
+    }
+
+    public function viewNow() {
+
+        die('Overriding method');
+    }
+
     /**
      * Lists all Address models.
      * @return mixed
      */
     public function actionIndex()
     {
+        die('in list');
         $searchModel = new AddressSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
